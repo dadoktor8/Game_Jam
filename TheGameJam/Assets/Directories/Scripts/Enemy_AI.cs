@@ -14,12 +14,12 @@ using UnityEngine.SceneManagement;
 		public float damping; 
 		public Transform FPS_player; 
 		Rigidbody EnemyGuy; 
-		Renderer myRender; 
+	
 
 
 		void Start () 
 		{
-			myRender = GetComponent<Renderer>();
+			
 			EnemyGuy = GetComponent<Rigidbody> (); 
 		}
 		
@@ -29,7 +29,7 @@ using UnityEngine.SceneManagement;
 			FPS_targetDistance = Vector3.Distance (FPS_player.position,transform.position); 
 			if (FPS_targetDistance < FPS_lookDistance) 
 			{
-				myRender.material.color = Color.yellow; 
+				
 				WhereISPlayer (); 
 				Debug.Log ("Player Found"); 
 
@@ -38,14 +38,10 @@ using UnityEngine.SceneManagement;
 			if (FPS_targetDistance < FPS_attackDistance) {
 				attackFunction (); 
 				Debug.Log ("About to die"); 
-				myRender.material.color = Color.red; 
+
 				restart (); 
 
-			} else 
-			{
-				myRender.material.color = Color.blue; 
-
-			}
+			} 
 		}
 
 		void WhereISPlayer ()

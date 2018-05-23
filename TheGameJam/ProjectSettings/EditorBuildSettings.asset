@@ -4,4 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Directories/Scenes/MenuGameStart.unity
+    guid: 507e6d50b2027894790b64a188bdc6ff
+  - enabled: 1
+    path: Assets/Directories/Scenes/GameStartDialogues.unity
+    guid: 0d7424e4b84c2db459f023a6e485d7e5
+  - enabled: 1
+    path: Assets/Directories/Scenes/Sample_Scene_Episkeptis 2.unity
+    guid: abd51e82797189e469431d5adb92641f
