@@ -26,7 +26,7 @@ public class EnemyADVANCED_AI : MonoBehaviour {
 			float distance = Vector3.Distance (targetPlayer.position , transform.position); 
 			if (distance <= lookRadius)
 			{
-				agent.SetDestination (targetPlayer.position); 
+				agent.SetDestination (transform.position); 
 				faceTarget (); 
 
 				if (distance <= agent.stoppingDistance) 
