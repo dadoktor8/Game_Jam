@@ -9,11 +9,14 @@ public class DialogueManager : MonoBehaviour {
 
 		private Queue<string> sentences;
 		public Text nameText; 
-		public Text dialogueText; 
+		public Text dialogueText;
+        [SerializeField] GameObject StartBtn;
+        [SerializeField] GameObject continueBtn;
 	
 
 	void Start () {
 
+           // continueBtn.SetActive(true);
 			sentences = new Queue<string> (); 
 		
 	}
@@ -28,8 +31,9 @@ public class DialogueManager : MonoBehaviour {
 				sentences.Enqueue (sentence); 
 			
 			}
-
-			DisplayNextSentence (); 
+            StartBtn.SetActive(false);
+            continueBtn.SetActive(true);
+            DisplayNextSentence (); 
 		}
 
 		public void DisplayNextSentence () 
