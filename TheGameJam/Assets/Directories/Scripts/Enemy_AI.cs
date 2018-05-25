@@ -17,6 +17,7 @@ using UnityEngine.SceneManagement;
 	
 
 
+
 		void Start () 
 		{
 			
@@ -53,7 +54,9 @@ using UnityEngine.SceneManagement;
 
 		void attackFunction()
 		{
-			EnemyGuy.AddForce (transform.forward * enemyMovement); 
+			EnemyGuy.AddForce(transform.forward * enemyMovement);
+
+		
 
 		}
 		void restart()
