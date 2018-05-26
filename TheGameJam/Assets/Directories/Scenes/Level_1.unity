@@ -3899,7 +3899,7 @@ Prefab:
     - target: {fileID: 2300000, guid: d9cf5119dd50ea945b6f7ae90960d1b3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 618feed0a2314a44cb0b07fc23aa0027, type: 2}
+      objectReference: {fileID: 2100000, guid: 650c5898b74a27946b04221961817df6, type: 2}
     - target: {fileID: 100002, guid: d9cf5119dd50ea945b6f7ae90960d1b3, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 40
@@ -4226,7 +4226,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1579311712}
   m_LocalRotation: {x: 0.54434705, y: -0.24916536, z: 0.07002986, w: 0.7979341}
-  m_LocalPosition: {x: 32.54, y: 21.29, z: -26.58}
+  m_LocalPosition: {x: 22.1, y: 21.29, z: -36.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

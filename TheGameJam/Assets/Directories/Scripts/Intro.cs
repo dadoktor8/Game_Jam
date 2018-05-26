@@ -11,6 +11,7 @@ public class Intro : MonoBehaviour {
     [SerializeField] float IntroTime = 10.0f;
     [SerializeField] int Index = 2;
     [SerializeField] AudioSource IntroMusic;
+	[SerializeField] AudioSource CharacterVoice; 
 
     double musicVolume = 0.0f;
 

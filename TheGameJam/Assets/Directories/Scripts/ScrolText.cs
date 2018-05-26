@@ -6,17 +6,19 @@ using UnityEngine.UI;
 public class ScrolText : MonoBehaviour {
 
     RectTransform intro;
+
     float PosX = 0.0f;
     float PosY = 0.0f;
-
+	public float scrollTime = 0.01f; 
 	// Use this for initialization
 	void Start () {
         intro = GetComponent<RectTransform>();
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        PosY++;
+		PosY++; 
         intro.anchoredPosition = new Vector2(PosX,PosY);
 	}
 }
