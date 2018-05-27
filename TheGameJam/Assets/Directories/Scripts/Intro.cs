@@ -29,7 +29,7 @@ public class Intro : MonoBehaviour {
     IEnumerator FadeTo()
     {
         yield return new WaitForSeconds(IntroTime);
-        anim.SetBool("Fade", true);
+	     anim.SetBool("Fade", true);
         StartCoroutine(StartLevel() );
         
     }

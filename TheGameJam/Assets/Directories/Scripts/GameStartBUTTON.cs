@@ -15,5 +15,14 @@ public class GameStartBUTTON : MonoBehaviour {
 		
 		}
 
+
+		public void credits() 
+		{
+
+			Application.LoadLevel ("Credits"); 
+
+
+		}
+
 }
 }

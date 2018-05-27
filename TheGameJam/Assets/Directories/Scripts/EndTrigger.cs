@@ -7,11 +7,11 @@ using UnityEngine.SceneManagement;
 namespace endGame{
 public class EndTrigger : MonoBehaviour {
 
-		public float NextLevelTimer = 1f; 
+		public float NextLevelTimer = 3f; 
 
 		void OnTriggerEnter()
 		{
-
+			FindObjectOfType<AudioManager> ().Play ("LevelWon"); 
 			Invoke("nextLevel",NextLevelTimer); 
 
 		}

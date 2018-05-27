@@ -18,7 +18,7 @@ public class ScrolText : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		PosY++; 
+	     PosY++; 
         intro.anchoredPosition = new Vector2(PosX,PosY);
 	}
 }

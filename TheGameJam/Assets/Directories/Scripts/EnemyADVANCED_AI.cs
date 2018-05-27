@@ -9,14 +9,17 @@ public class EnemyADVANCED_AI : MonoBehaviour {
 
 		public float lookRadius  = 10f; 
 
+		public float resartTime = 1f; 
 		Transform targetPlayer; 
 		NavMeshAgent agent; 
+
 
 	// Use this for initialization
 	void Start () {
 		
 			agent = GetComponent<NavMeshAgent> (); 
 			targetPlayer= PlayerManager.instance.player.transform; 
+
 
 	}
 	
@@ -36,8 +39,9 @@ public class EnemyADVANCED_AI : MonoBehaviour {
 
 				if (distance <= agent.stoppingDistance) 
 				{
-
-					SceneManager.LoadScene (SceneManager.GetActiveScene ().name); 
+					FindObjectOfType<AudioManager> ().Play ("HitSound"); 
+					Invoke ("RestartGame", resartTime); 
+			
 
 				}
 				
@@ -58,6 +62,14 @@ public class EnemyADVANCED_AI : MonoBehaviour {
 			Vector3 direction = (targetPlayer.position - transform.position).normalized; 
 			Quaternion lookRotation = Quaternion.LookRotation (new Vector3 (direction.x, 0, direction.z)); 
 			Quaternion.Slerp (transform.rotation,lookRotation, Time.deltaTime * 5f); 
+		}
+
+
+		void RestartGame()
+		{
+
+			SceneManager.LoadScene (SceneManager.GetActiveScene ().name); 
+
 		}
 
 
