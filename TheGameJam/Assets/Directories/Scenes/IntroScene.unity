@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028355, g: 0.22571374, b: 0.30692255, a: 1}
+  m_IndirectSpecularColor: {r: 0.1802834, g: 0.2257135, b: 0.3069223, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Fading: {fileID: 770460184}
   anim: {fileID: 770460183}
-  IntroTime: 28
+  IntroTime: 35
   Index: 2
   IntroMusic: {fileID: 1880971086}
   CharacterVoice: {fileID: 2050693693}
@@ -307,8 +307,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 2014144729}
-  - {fileID: 770460182}
   - {fileID: 1073134342}
+  - {fileID: 770460182}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -411,7 +411,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 290493951}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -498,7 +498,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 290493951}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -563,7 +563,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dea922f0113eeb0448f186bbd15be1d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollTime: 0.01
+  scrollTime: 0.7
 --- !u!114 &1073134346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -861,7 +861,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b293950ba30a9244fa3e468a29f58176, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8fffa399e64888742ab1e4e6b517bb45, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

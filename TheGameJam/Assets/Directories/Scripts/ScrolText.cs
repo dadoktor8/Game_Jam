@@ -9,7 +9,7 @@ public class ScrolText : MonoBehaviour {
 
     float PosX = 0.0f;
     float PosY = 0.0f;
-	public float scrollTime = 0.01f; 
+	public float scrollTime = 1.0f; 
 	// Use this for initialization
 	void Start () {
         intro = GetComponent<RectTransform>();
@@ -18,7 +18,7 @@ public class ScrolText : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	     PosY++; 
+	     PosY+= scrollTime; 
         intro.anchoredPosition = new Vector2(PosX,PosY);
 	}
 }
