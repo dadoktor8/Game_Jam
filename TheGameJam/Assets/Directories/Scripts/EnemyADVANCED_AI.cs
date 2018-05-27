@@ -6,22 +6,24 @@ using UnityEngine.SceneManagement;
 namespace EnemyBasics{
 public class EnemyADVANCED_AI : MonoBehaviour {
 
-
+        
 		public float lookRadius  = 10f; 
 
 		public float resartTime = 1f; 
 		Transform targetPlayer; 
-		NavMeshAgent agent; 
+		NavMeshAgent agent;
+        public GameObject HitUI;
+        AudioManager sound;
 
-
-	// Use this for initialization
-	void Start () {
+        // Use this for initialization
+        void Start () {
 		
 			agent = GetComponent<NavMeshAgent> (); 
-			targetPlayer= PlayerManager.instance.player.transform; 
+			targetPlayer= PlayerManager.instance.player.transform;
+            sound =  FindObjectOfType<AudioManager>();
 
 
-	}
+        }
 	
 	// Update is called once per frame
 	void Update () {
@@ -39,7 +41,9 @@ public class EnemyADVANCED_AI : MonoBehaviour {
 
 				if (distance <= agent.stoppingDistance) 
 				{
-					FindObjectOfType<AudioManager> ().Play ("HitSound"); 
+                    sound.Play("HitSound");
+                    HitUI.SetActive(true);
+					//FindObjectOfType<AudioManager> ().Play ("HitSound"); 
 					Invoke ("RestartGame", resartTime); 
 			
 
