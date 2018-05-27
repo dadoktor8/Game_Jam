@@ -847,7 +847,20 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Thanks for Playing our game. \n\nESC to return to main menu\n"
+  m_Text: 'W = walk forward
+
+    a = strafe left
+
+    d = strafe right
+
+    s = walk backwards
+
+    left mouse button = stop time
+
+    e = continue time
+
+
+'
 --- !u!222 &2085912271
 CanvasRenderer:
   m_ObjectHideFlags: 0
